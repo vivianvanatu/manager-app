@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form #form1="ngForm" (ngSubmit)="addNewPerson(form1)">
+            <div class="row">
+                <div class="col-sm-7 form-floating mt-2">
+                    <input type="text" class="form-control" id="name" placeholder="name" name="name" ngModel required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-sm-7 form-floating mt-2">
+                    <input type="email" class="form-control" id="email" placeholder="email" name="email" ngModel required>
+                    <label for="email">email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 row-margin-5">
+                    <button class="btn btn-success margin-5" [disabled]="!form1.valid">{{ editMode ? 'Edit' : 'Add' }}</button>
+                    <button class="btn btn-danger margin-5" (click)="onItemDelete()" *ngIf="editMode">Delete</button> <!--[disabled]="!editMode"-->
+                    <button class="btn btn-primary margin-5" (click)="onFormReset()">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

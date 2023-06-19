@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.margin-5 {
+  margin: 5px;
+}
+.row-margin-5 {
+  margin-top: 5px;
+}
+.row-margin-10 {
+  margin-top: 10px;
+}
+.row-margin-20 {
+  margin-top: 20px;
+}

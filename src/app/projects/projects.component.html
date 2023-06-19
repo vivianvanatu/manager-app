@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-7">
+        <app-project-list (selectedProject)="projectSelected = $event"></app-project-list>
+    </div>
+    <div class="col-md-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>

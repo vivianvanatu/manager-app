@@ -1,0 +1,7 @@
+.dropdown-option-list {
+    transform: translate(0px 10px);
+}
+.active {
+  color: #fff!important;
+  /* background-color: #0d6efd; */
+}
